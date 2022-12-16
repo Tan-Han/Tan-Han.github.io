@@ -1,0 +1,1145 @@
+@use "colors" as *;
+@use "typography" as *;
+
+* {
+  padding: 0;
+  margin: 0;
+  transition: 0.5s;
+}
+
+body {
+  background-color: $base-color;
+  padding: 0;
+  margin: 0;
+}
+
+.row > *{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+// Navigation bar
+
+.navbar {
+  background-color: $primary-color;
+  height: 80px;
+  color: $base-color;
+  font-size: 18px;
+  padding: 0 10px;
+  z-index: 10;
+}
+
+.navbar-logo {
+  height: 65px;
+}
+
+.navbar a {
+  color: $base-color;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.navbar a:hover {
+  color: $cta-color;
+  text-decoration: underline 2px;
+}
+
+.nav-link:hover {
+  color: $cta-color;
+}
+
+.nav-link:focus {
+  color: $cta-color;
+}
+
+.btn-outline-success {
+  --bs-btn-color: #232659;
+  --bs-btn-border-width: 2px;
+  --bs-btn-bg: #f2f2f2;
+  --bs-btn-border-color: #f2f2f2;
+  --bs-btn-hover-color: #f2f2f2;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: #f2f2f2;
+  --bs-btn-active-color: #f2f2f2;
+  --bs-btn-active-bg: #232659;
+  --bs-btn-active-border-color: #232659;
+  --bs-btn-disabled-color: #232659;
+  --bs-btn-disabled-border-color: #232659;
+}
+
+// Hero image
+
+.hero-img-container {
+  width: 100%;
+}
+
+.hero-img-container h1 {
+  font-size: 85px;
+}
+
+.hero-img-caption-container {
+  position: absolute;
+  left: 14rem;
+  top: 15rem;
+  text-align: center;
+  background-color: #f2f2f252;
+  padding: 25px;
+  border-radius: 25px;
+  color: $cta-color;
+  text-shadow: 2px 2px 10px #f2f2f2;
+  backdrop-filter: blur(10px);
+}
+
+// Sticker
+
+.kids-que-container {
+  position: absolute;
+  right: 0.5rem;
+  top: 25rem;
+  text-align: center;
+  background-color: $third-color;
+  width: fit-content;
+  padding: 50px 30px;
+  border-radius: 50%;
+  color: $base-color;
+  z-index: 5;
+}
+
+.kids-que-h1 {
+  padding-bottom: 10px;
+}
+
+// Sub navbar
+
+.sub-navbar {
+  background-color: $primary-color;
+  height: 80px;
+  padding: 0;
+  font-size: 20px;
+}
+
+.sub-navbar ul li {
+  color: $base-color;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+// Cards
+
+.card-row {
+  justify-content: center;
+  padding: 30px 0;
+  margin-top: 1rem;
+}
+
+.card {
+  margin: auto;
+}
+
+.card-body {
+  height: 250px;
+}
+.card-text {
+  height: 100px;
+}
+
+.card-body i {
+  margin-right: 0px;
+  margin-left: 75%;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.fa-arrow-circle-right, .fa-arrow-circle-left {
+  color: $cta-color;
+}
+
+.img-card-col {
+  height: 250px;
+}
+
+// Galleri
+
+.galleri-h2 {
+  background-color: $primary-color;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: $base-color;
+}
+
+.galleri-div {
+  display: flex;
+  justify-content: center;
+  min-width: 800px;
+}
+
+.gal-row {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  border-bottom: $primary-color solid 2px;
+}
+
+.gal-row .col {
+  display: flex;
+  justify-content: center;
+}
+
+.gal-row .col-left {
+  margin-left: 125px;
+}
+
+.gal-row .col-right {
+  margin-right: 125px;
+}
+
+.galleri-car-img {
+  height: 200px;
+}
+
+// Følg os
+
+.col-tilmeld i {
+  margin-right: 0;
+  margin-left: 85%;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.fb-col, .insta-col {
+  padding: 10px;
+}
+
+.fa {
+  padding: 20px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-social:hover {
+  opacity: 0.7; 
+}
+
+.fa-facebook {
+  background: $primary-color;
+  color: white;
+}
+
+.fa-instagram {
+  background: $primary-color;
+  color: white;
+}
+
+.follow-col, .col-tilmeld {
+  border: $primary-color 2px solid;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+// Sponsors
+
+.container-sponsor {
+  border-bottom: $primary-color 2px solid;
+  margin: 50px 0;
+}
+
+.container-sponsor h2 {
+  background-color: $primary-color;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: $base-color;
+}
+
+// Footer
+
+.footer-container {
+  background-color: $primary-color;
+  color: $base-color;
+  margin-top: 50px;
+  padding: 0  30px;
+}
+
+.footer-container .row {
+  height: 100%;
+  padding: 2rem 2rem;
+}
+
+.footer-container .row .col {
+  width: 10%;
+  height: 10%;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-logo-col {
+  display: flex;
+  justify-content: right;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-logo-col a {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: fit-content;
+}
+
+.footer-logo {
+  max-width: 125px;
+}
+
+.footer-menu  {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu li {
+  padding: 5px 0;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: $base-color;
+}
+  
+.footer-menu a:hover {
+  color: $cta-color;
+  text-decoration: underline 2px;
+}
+ 
+.contact-h4 {
+  margin-top: 5px;
+}
+
+.contact-col p {
+  padding: 0;
+  margin: 0;
+}
+
+// Program
+
+.row-program {
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.row-program h2 {
+  border-bottom: 3px solid $primary-color;
+  padding-bottom: 20px;
+}
+
+.row-program h4 {
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.maskot-program-row {
+  width: 100%;
+  height: 100%;
+}
+
+.maskot-col, .program-col {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
+
+.viking-maskot {
+  height: auto;
+  width: 60%;
+}
+
+.program {
+  height: 100%;
+  width: auto;
+  padding-right: 20px;
+}
+
+// Tilmelding
+
+.h2-tilmelding-container {
+  color: $cta-color;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  padding: 0 40%; 
+  margin-top: 30px; 
+  margin-bottom: 30px;
+}
+
+.h2-tilmelding-container h2 {
+  border-bottom: 3px solid $primary-color;
+  padding-bottom: 10px;
+}
+
+.bbq-tilmeld-container .row .col {
+  margin: 30px;
+  border: $primary-color 2px solid;
+  border-radius: 5px;
+}
+
+.bbq-tilmeld-container .row .col .h3-row {
+  width: 100%;
+  text-align: center;
+  background-color: $primary-color;
+  color: $base-color;
+  padding: 10px;
+}
+
+.bbq-tilmeld-container .row .col .blanket-row {
+  width: 100%;
+  color: $primary-color;
+  padding: 10px;
+}
+
+.submit-knap {
+  --bs-btn-color: #232659;
+  --bs-btn-border-width: 2px;
+  --bs-btn-bg: #f2f2f2;
+  --bs-btn-border-color: #232659;
+  --bs-btn-hover-color: #f2f2f2;
+  --bs-btn-hover-bg: #232659;
+  --bs-btn-hover-border-color: #232659;
+  --bs-btn-active-color: #f2f2f2;
+  --bs-btn-active-bg: #232659;
+  --bs-btn-active-border-color: #232659;
+  --bs-btn-disabled-color: #232659;
+  --bs-btn-disabled-border-color: #232659;
+}
+
+.form-col {
+  min-width: 350px;
+}
+
+
+// Find vej
+
+.findvej-container {
+  color: $cta-color;
+}
+
+.findvej-row-one {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.kort-row {
+  border-bottom: 1px solid $primary-color;
+  padding-bottom: 50px;
+  margin: 0 30px;
+}
+
+.kort-col {
+  border: 2px solid $primary-color;
+  height: 324px;
+}
+
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 1250px) {
+  .sub-navbar ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+
+  .kids-que-container {
+    right: 0.5rem;
+    top: 24rem;
+    padding: 40px 15px;    
+  }
+
+  .hero-img-caption-container {
+    left: 10rem;
+  }
+  
+}
+
+@media screen and (max-width: 1160px) {
+  
+  .follow-col, .col-tilmeld {
+    border: $primary-color 2px solid;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+}
+
+@media screen and (max-width: 1140px) {
+  
+  .follow-col, .col-tilmeld {
+    border: $primary-color 2px solid;
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .follow-col p, .col-tilmeld p {
+    font-size: 14px;
+  }
+
+  .kids-que-container {
+    right: 0.5rem;
+    top: 24rem;
+    padding: 30px 8px;
+  }
+
+  .kids-que-container h1 {
+    font-size: 40px;
+  }
+
+  .kids-que-container h3 {
+    font-size: 20px;
+  }
+
+  .kids-que-container p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+
+  .hero-img-container h1 {
+    font-size: 75px;
+  }
+
+  .hero-img-caption-container {
+    left: 11rem;
+    top: 12rem;
+  }
+
+  .kids-que-container {
+    right: 0.5rem;
+    top: 22rem;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .hero-img-caption-container {
+    left: 11rem;
+    top: 11rem;
+  }
+
+  .hero-img-container h1 {
+    font-size: 70px;
+  }
+  
+  .kids-que-container {
+    right: 0.5rem;
+    top: 21rem;
+  }
+
+  .follow-video-container .video-row {
+    display: block;
+    padding-left: 30%;
+  }
+
+  .follow-video-container .row .col {
+    margin: 20px 0;
+  }
+
+  .fb-col, .insta-col {
+    width: 50%;
+  }
+
+}
+
+@media screen and (max-width: 1055px) {
+  .galleri-car-img {
+    height: 150px;
+  }
+
+}
+
+@media screen and (max-width: 995px) {
+
+  .hero-img-caption-container {
+    left: 11rem;
+    top: 11rem;
+  }
+  
+  .hero-img-container h1 {
+    font-size: 60px;
+  }
+  
+  .hero-img-container h3 {
+    font-size: 22px;
+  }
+
+  .hero-img-container h4 {
+    font-size: 18px;
+  }
+
+  .kids-que-container {
+    right: 0.5rem;
+    top: 19rem;
+  }
+
+  .kidsque-row {
+    display: block;
+  }
+
+  .kidsque-row .img-col {
+    width: auto!important;
+    margin-left: 15%;
+    width: 500px!important;
+    height: auto!important;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .search-bar {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 930px){
+  .kids-que-container {
+    right: 0.5rem;
+    top: 18rem;
+  }
+}
+
+@media screen and (max-width: 910px){
+  
+  .hero-img-caption-container {
+    left: 0.5rem;
+    top: 11rem;
+  }
+  
+  .kids-que-container {
+    right: 0.5rem;
+    top: 10rem;
+  }
+
+  .follow-video-container .video-row {
+    display: block;
+    padding-left: 25%;
+  }
+
+  .findvej-row-one {
+    padding: 0 30%!important;
+  }
+
+  .h2-tilmelding-container{
+    padding: 0 30%!important;
+  }
+
+  .kort-col {
+    margin-right: 0!important;
+    max-width: auto!important;
+  }
+}
+
+
+@media screen and (max-width: 845px){
+  
+  .hero-img-container h1 {
+    font-size: 50px;
+  }
+  
+  .hero-img-container h3 {
+    font-size: 18px;
+  }
+
+  .hero-img-container h4 {
+    font-size: 16px;
+  }
+
+  .kids-que-container h1 {
+    font-size: 30px;
+  }
+
+  .kids-que-container h3 {
+    font-size: 18px;
+  }
+
+  .kids-que-container p {
+    font-size: 14px;
+  }
+
+  .sub-navbar {
+    font-size: 16px;
+  }
+
+  .kort {
+    width: auto!important;
+  }
+
+  .adresse-col {
+    padding: 90px 60px!important;
+  }
+
+  .kids-row{
+    padding: 0 30%!important;
+  }
+
+  .col-left, .col-right {
+    display: none;
+    visibility: hidden;
+  }
+
+  .col-mid .galleri-car-img {
+    height: 250px!important;
+    padding: 0 10px;
+  }
+
+  .gal-row .col-left, .gal-row .col-right {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .img-card-col {
+    height: auto;
+  }
+
+  .img-card-col .img-fluid {
+    max-height: 200px!important;
+    width: 100%;
+  }
+
+  .card-body {
+    height: 200px;
+  }
+
+  .card-text {
+    height: 75px;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-body i {
+    margin-top: 0;
+  }
+
+  .kidsque-row .img-col {
+    margin-left: 10%!important;
+  }
+}
+
+@media screen and (max-width: 750px) {
+
+  .follow-video-container .video-row {
+    display: block;
+    padding-left: 20%;
+  }
+
+  .kids-que-container {
+    right: 15rem;
+    top: 14.5rem;
+    padding: 10px 8px;
+    border-radius: 25px;
+  }
+
+  .kids-que-container h1 {
+    font-size: 30px;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+  }
+
+  .kids-que-container h3 {
+    font-size: 18px;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+  }
+
+  .kids-que-container p {
+    font-size: 14px;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+  }
+
+  .hero-img-caption-container {
+    left: 8rem;
+    top: 5.3rem;
+  }
+
+  .adresse-col {
+    padding: 90px 30px!important;
+  }
+
+}
+
+@media screen and (max-width: 730px) {
+
+  .follow-video-container .video-row {
+    display: block;
+    padding-left: 20%;
+  }
+
+  .kids-que-container {
+    right: 0;
+    left: 3rem;
+    top: 14.5rem;
+    padding: 10px 8px;
+    border-radius: 25px;
+  }
+
+  .hero-img-caption-container {
+    left: 7rem;
+    top: 5.3rem;
+  }
+
+  .search-bar {
+    width: 30%;
+  }
+
+  .offentlig-col {
+    padding: 50px 60px!important;
+  }
+
+  .rejse-tekst {
+    width: 80%!important;
+  }
+
+  .rejseplanen-logo {
+    width: 75%!important;
+  }
+
+}
+
+@media screen and (max-width: 690px) {
+
+  .follow-video-container .video-row {
+    display: block;
+    padding-left: 15%;
+  }
+
+  .kids-que-container {
+    right: 0;
+    left: 2.5rem;
+    top: 14.5rem;
+    padding: 10px 8px;
+    border-radius: 25px;
+  }
+
+  .hero-img-caption-container {
+    left: 6rem;
+    top: 5.3rem;
+  }
+
+  .adresse-col {
+    padding: 90px 10px!important;
+  }
+
+  .kidsque-row .img-col {
+    margin-left: 10%!important;
+  }
+
+}
+
+@media screen and (max-width: 620px) {
+  .footer-logo {
+    max-width: 80px;
+    padding-top: 30px;
+  }
+
+  .footer-col h4 {
+    font-size: 16px;
+  }
+
+  .footer-col p, .footer-col ul li a {
+    font-size: 12px;
+  }
+
+  .kids-que-container h1 {
+    font-size: 25px;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+  }
+
+  .kids-que-container h3 {
+    font-size: 14px;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+  }
+
+  .kids-que-container p {
+    font-size: 12px;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+  }
+
+  .hero-img-container h1 {
+    font-size: 40px;
+  }
+
+  .hero-img-container h3 {
+    font-size: 16px;
+  }
+
+  .hero-img-container h4 {
+    font-size: 12px;
+  }
+
+  .kids-que-container {
+    right: 0;
+    left: 1rem;
+    top: 14rem;
+    padding: 10px 8px;
+    border-radius: 25px;
+  }
+
+  .hero-img-caption-container {
+    left: 6rem;
+    top: 5rem;
+  }
+
+  .search-bar {
+    width: 50%;
+  }
+
+  .adresse-h4 {
+    font-size: 18px;
+  }
+
+  .offentlig-col p {
+    font-size: 16px;
+  }
+
+  .kids-row{
+    padding: 0 20%!important;
+  }
+
+  .h2-tilmelding-container{
+    padding: 0 20%!important;
+  }
+
+  .col-mid .galleri-car-img {
+    height: 200px!important;
+    padding: 0 10px;
+  }
+
+  .galleri-arrow {
+    margin-left: 30px!important;
+    margin-right: 50px!important;
+  }
+}
+
+@media screen and (max-width: 580px) {
+    .hero-img-container h1 {
+    font-size: 30px;
+  }
+
+  .kids-que-container h1 {
+    font-size: 20px;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+  }
+
+  .kids-que-container {
+    right: 0.0;
+    left: auto;
+    top: 9rem;
+    padding: 10px 8px;
+    border-radius: 25px;
+  }
+
+  .hero-img-caption-container {
+    left: 0;
+    top: 8.5rem;
+  }
+
+  .kidsque-row .img-col {
+    margin-left: 5%!important;
+  }
+
+}
+
+@media screen and (max-width: 575px) {
+  .follow-video-container .video-row {
+    padding-left: 10%;
+  }
+  
+  .offentlig-col {
+    padding: 50px 40px!important;
+  }
+
+  .carousel-control-next, .carousel-control-prev {
+    width: 60px!important;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .offentlig-col {
+    display: block;
+  }
+
+  .rejse-div {
+    margin-left: 20px;
+    padding-left: 30px;
+  }
+
+  .rejse-col {
+    padding-top: 20px!important;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .sub-navbar {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 515px) {
+  .follow-video-container .video-row {
+    padding-left: 5%;
+  }
+
+  .kids-que-container {
+    display: none;
+    visibility: hidden;
+  }
+
+  .hero-img-caption-container {
+    left: 5rem;
+    top: 8rem;
+  }
+
+  .kidsque-row .img-col {
+    margin-left: 2%!important;
+  }
+
+  .col-mid .galleri-car-img {
+    height: 150px!important;
+    padding: 0 10px;
+  }
+
+}
+
+@media screen and (max-width: 490px) {
+  .footer-container {
+    padding: 0 10px;
+  }
+
+  .sub-navbar {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .follow-video-container .video-row {
+    padding-left: 4%;
+  }
+
+  .hero-img-caption-container {
+    left: 4.5rem;
+    top: 7rem;
+  }
+
+  .findvej-row-one {
+    padding: 0 20%!important;
+  }
+
+  .carousel-control-next, .carousel-control-prev {
+    width: 40px!important;
+  }
+
+}
+
+@media screen and (max-width: 455px) {
+  .follow-video-container .video-row {
+    padding-left: 3%;
+  }
+
+  .footer-container {
+    padding: 0 0;
+  }
+
+  .footer-container .row {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .follow-video-container .video-row {
+    padding-left: 2%;
+  }
+
+  .hero-img-caption-container {
+    left: 3.8rem;
+    top: 6.5rem;
+  }
+
+}
+
+@media screen and (max-width: 435px) {
+  .follow-video-container .video-row {
+    padding-left: 1%;
+  }
+
+  .hero-img-caption-container {
+    left: 3.3rem;
+    top: 6.5rem;
+  }
+
+  .form-col {
+    margin: 30px 15px!important;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  
+  .follow-col, .col-tilmeld, .video-col {
+    max-width: 350px!important;
+  }
+
+  .video {
+    max-width: 350px!important;
+  }
+
+  .follow-video-container .video-row {
+    padding-left: 5%;
+  }
+
+  .hero-img-caption-container {
+    left: 2.8rem;
+    top: 6.5rem;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .hero-img-caption-container {
+    left: 2rem;
+    top: 6.5rem;
+  }
+
+}
+
+@media screen and (max-width: 385px) {
+
+  .follow-video-container .video-row {
+    padding-left: 4%;
+  }
+
+  .hero-img-caption-container {
+    left: 2rem;
+    top: 6rem;
+  }
+
+}

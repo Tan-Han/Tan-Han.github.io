@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Longhorn BBQ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <!-- ^ social media icons - fundet på w3schools -->
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- ^ arrow icon - fundet på w3schools -->
+
+  <link rel="stylesheet" href="https://use.typekit.net/kwe4lzz.css">
+  <!-- ^skrifttyper - fundet på Adobe Fonts -->
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <!-- Kopierede navbar ind fra Bootstraps hjemmeside. -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark w-100 align-items-center">
+    <div class="container-fluid w-100" style="z-index: 10; background-color: #73060F;">
+
+<!-- Indsat logo. Givet den class "navbar-logo" -->
+
+      <a class="navbar-brand" href="#"><img src="img/Logo/Longhorn logo - f2 - nr 2.svg" alt="" class="navbar-logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- I ul-class har jeg skrevet w-100 for full width og justify-content-center for at centrere menuen. I mellem hver a og /a er der skrevet en menu-knaps navn, f.eks. <a> Hjem </a>. Den sidste a er en dropdown med sprog valgmuligheder -->
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="z-index: 10;">
+        <ul class="navbar-nav w-100 justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Hjem</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="findvej.html">Find vej</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tilmelding.html">Tilmelding</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sprog
+            </a>
+            <ul class="dropdown-menu" style="background-color: #f2f2f2; --bs-dropdown-link-hover-bg: none;">
+              <li><a class="dropdown-item" href="#" style="color: #73060F;">Dansk</a></li>
+              <li><a class="dropdown-item" href="#" style="color: #73060F;">English</a></li>
+              <li><a class="dropdown-item" href="#" style="color: #73060F;">Español</a></li>
+              <li><a class="dropdown-item" href="#" style="color: #73060F;">Svenska</a></li>
+              <li><a class="dropdown-item" href="#" style="color: #73060F;">Norsk</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search" style="padding: 10px 0;">
+          <input class="form-control me-2 search-bar" type="search" placeholder="Søg" aria-label="Search">
+          <button class="btn btn-outline-success search-button" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Image -->
+  <!-- jeg har lavet en .container-fluid divbox som jeg jeg har lagt et billede ind i. Herefter har jeg lavet en divbox hvor jeg har lavet 3 headlines -->
+
+  <div class="container-fluid hero-img-container" style="padding: 0; --bs-gutter-x: 0;">
+    <img src="img/kids bbq 3.jpg" alt="" class="img-fluid hero-img w-100">
+    <div class="hero-img-caption-container">
+      <h1 class="header-one">Longhorn BBQ</h1>
+      <h3 class="header-three">DM i Amerikansk BBQ</h3>
+      <h4 class="header-four">Lørdag d. 13. maj og søndag d. 14. maj 2023</h4>
+    </div>
+  </div>
+
+  <!-- Sticker -->
+  <!-- Jeg har lavet en container med en h2, h3, p og knap -->
+
+  <div class="container kids-que-container">
+    <h1 class="kids-que-h1 header-one">NYT !</h1>
+    <h3 class="kids-que-h3 header-three">Kids Que</h3>
+    <p class="kids-que-p">Grill konkurrence for de mindste!</p>
+    <a href="kidsque.html"><button class="btn btn-outline-success kids-que-button" type="button">Se mere</button></a>
+  </div>
+
+  <!-- Sub menu/navbar -->
+  <!-- Jeg har lavet en .container-fluid divbox, hvor jeg har kopieret en navbar fra Bootstrap ind. Jeg har kaldt containeren for sub-navbar -->
+
+  <div class="container-fluid sub-navbar">
+    <ul class="nav w-100 justify-content-center h-100 align-items-center">
+      <li class="nav-item">
+        DM i Amerikansk BBQ
+      </li>
+      <li class="nav-item">
+        Kids Que
+      </li>
+      <li class="nav-item">
+        Vintage biler
+      </li>
+      <li class="nav-item">
+        Ølsmagning
+      </li>
+    </ul>
+  </div>
+
+  <!-- Cards -->
+
+  <!-- Lavede en ".container-fluid" divbox. Lavede en .row, hvor jeg kopirede en card ind fra Bootstrap. Kopierede .row og cards ind igen. I den første .row har jeg styled med padding-right og -left 0 og --bs-gutter-x 0 for at der ikke kom hvide kanter i højre og venstre side. I slutningen af hver card har jeg indsat et icon. Den er fundet på w3school og kopieret ind. Jeg har også sat linket til icon ind i "head" - Se gerne note i "head" -->
+
+  <!-- Images i hver card er er styled via class "h-100" og style "object-fit: cover" for at få dem til at udfylde hele image boksen -->
+  
+  <div class="container-fluid card-con">
+    <div class="row card-row" style="padding-right: 0; padding-left: 0; --bs-gutter-x: 0;">
+      <div class="card mb-3" style="max-width: 400px; border: 2px #73060F solid;">
+        <div class="row g-0" >
+          <div class="col-md-4 img-card-col">
+            <img src="img/Teams logo/sweat-hogs.png" class="img-fluid rounded-start h-100" alt="..." class="img-hall-of-fame" style="object-fit: cover;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Hall of Fame</h5>
+              <p class="card-text">Se de tidligere vindere af Longhorn BBQ competition</p>
+              <a href="#"><i class="fa fa-arrow-circle-right" style="font-size: 40px;"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 400px; border: 2px #73060F solid;">
+        <div class="row g-0">
+          <div class="col-md-4 img-card-col" >
+            <img src="img/Merch/Merch.png" class="img-fluid rounded-start h-100" alt="..." class="img-hall-of-fame" style="object-fit: cover;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Merch</h5>
+              <p class="card-text">Se vores super fede merch!</p>
+              <a href="#"><i class="fa fa-arrow-circle-right" style="font-size: 40px;"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 400px; border: 2px #73060F solid;">
+        <div class="row g-0">
+          <div class="col-md-4 img-card-col">
+            <img src="img/vintage cars.png" class="img-fluid rounded-start h-100 img-hall-of-fame" alt="..." style="object-fit: cover;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Program</h5>
+              <p class="card-text">Se hvad der skal ske på Longhorn</p>
+              <div class="row arrow-row w-100">
+                <a href="program.html" class="link-arrow"><i class="fa fa-arrow-circle-right" style="font-size: 40px;"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Galleri -->
+
+  <!-- Jeg har lavet en container-fluid div-box med 2 .row. I den første .row har jeg indsat en headline. I den anden .row har jeg indsat en carousel fra bootstrap. -->
+
+  <div class="container-fluid container-galleri" style="--bs-gutter-x: 0;">
+    <div class="row galleri-row" style="--bs-gutter-x: 0;">
+      <h2 class="header-two galleri-h2">Galleri</h2>
+    </div>
+    <div class="row" style="--bs-gutter-x: 0;">
+      <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+
+<!-- I carousel-item active har jeg, i stedet for et image, indsat en .row med 4 .col. I hver .col er der et image. -->
+<!-- jeg har kaldt .row for gal-row og i class styled med w-100 for full width og justify-content-center for at centrere billederne. Jeg har med style skrevet padding-right og -left 0 og --bs-gutter-x 0 for at der ikke kom hvide kanter i højre og venstre side.-->
+<!-- I carousel-item gjort præcis det samme -->
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row gal-row w-100 justify-content-center" style="margin-right: 0; margin-left: 0; --bs-gutter-x: 0;">
+              <div class="galleri-div">
+                <div class="col col-left">
+                  <img src="img/Galleri/cutting ribs.png" class="galleri-car-img" alt="..." >
+                </div>
+                <div class="col col-mid">
+                  <img src="img/Galleri/bbq sauce.png" class="galleri-car-img" alt="...">
+                </div>
+                <div class="col col-mid">
+                  <img src="img/Galleri/fire up.png" class="galleri-car-img" alt="...">
+                </div>
+                <div class="col col-right">
+                  <img src="img/Galleri/jack d.png" class="galleri-car-img" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row gal-row w-100 justify-content-center" style="margin-right: 0; margin-left: 0; --bs-gutter-x: 0;">
+              <div class="galleri-div">
+                <div class="col col-left">
+                  <img src="img/Galleri/judging plate.png" class="galleri-car-img" alt="..." >
+                </div>
+                <div class="col col-mid">
+                  <img src="img/Galleri/lille dreng.png" class="galleri-car-img" alt="...">
+                </div>
+                <div class="col col-mid">
+                  <img src="img/Galleri/Lille pige.png" class="galleri-car-img" alt="...">
+                </div>
+                <div class="col col-right">
+                  <img src="img/Galleri/Raw ribs.png" class="galleri-car-img" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row gal-row w-100 justify-content-center" style="margin-right: 0; margin-left: 0; --bs-gutter-x: 0;">
+              <div class="galleri-div">
+                <div class="col col-left">
+                  <img src="img/Galleri/Ribs.png" class="galleri-car-img" alt="..." >
+                </div>
+                <div class="col col-mid">
+                  <img src="img/Galleri/spiser ribs.png" class="galleri-car-img" alt="...">
+                </div>
+                <div class="col col-mid">
+                  <img src="img/Galleri/Svensk team.png" class="galleri-car-img" alt="...">
+                </div>
+                <div class="col col-right">
+                  <img src="img/Galleri/vinder 3.png" class="galleri-car-img" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row gal-row w-100 justify-content-center" style="margin-right: 0; margin-left: 0; --bs-gutter-x: 0;">
+              <div class="galleri-div">
+                <div class="col col-left">
+                  <img src="img/Galleri/vinder 1.png" class="galleri-car-img" alt="..." >
+                </div>
+                <div class="col col-mid">
+                  <img src="img/Galleri/vinder 2.png" class="galleri-car-img" alt="...">
+                </div>
+                <div class="col col-mid">
+                  <img src="img/Galleri/Sweaty hogs tønder.png" class="galleri-car-img" alt="...">
+                </div>
+                <div class="col col-right">
+                  <img src="img/Galleri/vintage biler 1.png" class="galleri-car-img" alt="...">
+                </div>
+            </div>
+            </div>
+          </div>
+
+<!-- I stedet for de pile som fulgte med bootstrap har jeg indsat samme icons som ved cards -->
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+          <a href="" class="link-arrow galleri-arrow" style="margin-left: 0; margin-right: 50px;"><i class="fa fa-arrow-circle-left" style="font-size: 40px;"></i></a>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+          <a href="" class="link-arrow galleri-arrow" style="margin-right: 0; margin-left: 30px;"><i class="fa fa-arrow-circle-right" style="font-size: 40px;"></i></a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Sponsors -->
+
+  <!-- Jeg har lavet en container-fluid med 2 .row. I den første .row har jeg indsat en headline. I den anden har jeg kopieret carousel ind fra bootstrap og indsat billeder med sponsors -->
+
+  <div class="container-fluid container-sponsor">
+    <div class="row">
+      <h2 class="header-two">Sponsors</h2>
+    </div>
+    <div class="row">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/Sponsor Logoer/Logo-del-1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Sponsor Logoer/Logo-del-2.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <!-- Følg os/video -->
+  <!-- Jeg har lavet en container med 1 rows og 3 columns. Jeg har brugt style i container og styled med margin 10px -->
+
+  <div class="container-fluid follow-video-container" style="padding: 0; --bs-gutter-x: 0;">
+
+    <!-- .row har jeg brugt style="--bs-gutter-x: 0;" for at fjerne hvid kant i højre side af hjemmesiden -->
+
+    <div class="row video-row" style="--bs-gutter-x: 0;">
+
+      <!-- Første .col har jeg kaldt for col-tilmeld og givet et højte på 225px -->
+      <!-- Jeg har lavet 3 .row inde i .col. -->
+      <!-- Den første .row har jeg kaldt for h2-follow-row, og indsat en h2 headline. Jeg har givet den en baggrundsfarve, skriftfarve, padding og fjernet hvid kant i højre side med --bs-gutter-x: 0; -->
+      <!-- Den anden .row har jeg kaldt for follow-row-text og indsat en paragraph. Jeg har styled den med padding i top, venstre og højre side, samt igen brugt --bs-gutter-x: 0; -->
+      <!-- I tredje .row har jeg indsat pil-icon fra cards  -->
+
+      <div class="col col-tilmeld" style="max-width: 420px; height: 236px;">
+        <div class="row h2-follow-row" style="background-color: #73060F; color: #f2f2f2; padding: 10px 10px; --bs-gutter-x: 0;">
+          <h2 class="header-two">Tilmelding</h2>
+        </div>
+        <div class="row follow-row-text" style="padding-top: 5px; padding-left: 10px; padding-right: 10px; --bs-gutter-x: 0;">
+          <p>Kunne du tænke dig at deltage i konkurrencen, eller kunne du tænke dig at være dommer? Eller kunne du måske tænke dig at være frivillig?</p>
+        </div>
+        <div class="row arrow-row-tilmeld w-100" style="height: 40px; align-items: center;">
+          <a href="" class="link-arrow" style="height: 50px; align-items: center;"><i class="fa fa-arrow-circle-right" style="font-size: 40px; padding: 0;"></i></a>
+        </div>
+      </div>
+
+      <!-- Anden .col har jeg kaldt for video-col og givet en max-width -->
+      <!-- Jeg har indsat en video med fuld højde og en max width og en border radius -->
+
+      <div class="col video-col" style="max-width: 420px;">
+        <video controls src="video/Teaser.mp4" class="video h-100'" style="max-width: 419px; border-radius: 5px;"></video>
+      </div>
+
+      <!-- Trejde .col har jeg kaldt for follow-col og givet en højde og max width. Jeg har indsat 3 .row -->
+      <!-- Den første .row har jeg kaldt for h2-follow-row, og indsat en h2 headline. Jeg har styled med baggrundsfarve, skriftfarve, padding og fjernet hvid kant i højre side med --bs-gutter-x: 0; -->
+      <!-- Den anden .row har jeg kaldt for follow-row-text, og indsat en paragraph. Jeg har styled den med padding i top, venstre og højre side, samt igen brugt --bs-gutter-x: 0;  -->
+      <!-- Den tredje .row har jeg kaldt for follow-icons-row og givet en full width med w-100 og brugt justify-content-center til at centrere de to .col som jeg har sat ind med icons i. follow-icons-row har jeg styled med padding til venstre og højre, --bs-gutter-x: 0; og en højde. Hver .col har jeg givet en full width. Jeg har styled med padding til højre og venstre, samt en margin i den ene side for at skubbe dem tættere sammen -->
+
+      <div class="col follow-col" style="max-width: 420px; height: 236px;">
+        <div class="row h2-follow-row" style="background-color: #73060F; color: #f2f2f2; padding: 10px 10px; --bs-gutter-x: 0;">
+          <h2 class="header-two">Følg os</h2>
+        </div>
+        <div class="row follow-row-text" style="padding-top: 5px; padding-left: 10px; padding-right: 10px; --bs-gutter-x: 0;">
+          <p>Følg os på Facebook eller Instagram, og følg med i hvad der kommer til at ske til den næste Longhorn BBQ Competition!</p>
+        </div>
+        <div class="row follow-icons-row w-100 justify-content-center" style="padding: 0px 10px; --bs-gutter-x: 0; height: 60px;">
+          <div class="col fb-col " style="padding: 0 10px; margin-left: 25%; width: 60px;">
+            <a href="#" class="fa fa-facebook" style="font-size: 20px;"></a>
+          </div>
+          <div class="col insta-col " style="padding: 0 10px; margin-right: 15%; width: 60px;">
+            <a href="#" class="fa fa-instagram" style="font-size: 20px;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer -->
+  <!-- jeg har lavet en container, med en row og 3 columns. På .row er der blevet brugt justify-content-center for at centrere columns -->
+    <!-- I column 1 er der lavet en ul med li, hvor i hver li er der et a til link. Det er sat op som en lille menu. Column er blevet givet en padding i toppen-->
+    <!-- I column 2 er der lavet en h4 og 3 paragrapher. Column er blevet givet en padding i toppen. Der er blevet brugt text-align-center for at centrere teksten -->
+    <!-- I column 3 er der indsat et billede i et <a>. -->
+
+      <div class="container-fluid footer-container">
+        <div class="row justify-content-center">
+          <div class="col footer-menu-col footer-col" style="padding-top: 30px;">
+            <ul class="footer-menu">
+              <li><a href="findvej.html">Find vej</a></li>
+              <li><a href="program.html">Program</a></li>
+              <li><a href="#">Merch</a></li>
+              <li><a href="tilmelding.html">Tilmelding</a></li>
+            </ul>
+          </div>
+          
+          <div class="col contact-col footer-col" style="margin-left: 0; padding-top: 30px; text-align: center;">
+            <h4 class="contact-h4 header-four">Kontakt os</h4>
+            <p>Fabriksvej 15, 6550 Brørup</p>
+            <p>72 30 12 33</p>
+            <p>info@primonordic.com</p>
+          </div>
+    
+          <div class="col footer-logo-col footer-col">
+            <a href="index.html" class=""><img src="img/Viking.png" alt="" class="footer-logo"></a>
+          </div>
+          
+        </div>
+      </div>
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+    </html>
